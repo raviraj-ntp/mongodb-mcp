@@ -23,7 +23,7 @@
     "model-context-protocol",
     "mongodb",
     "atlas",
-    "cursor"
+    "mcp-server"
   ],
   "type": "module",
   "main": "dist/index.js",

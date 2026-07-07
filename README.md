@@ -4,13 +4,13 @@ Feature-rich MCP server for **MongoDB** with **multi-connection** support. Conne
 
 - **npm:** `@raviraj87/mongodb-mcp`
 - **GitHub:** https://github.com/raviraj-ntp/mongodb-mcp
-- Runs locally via stdio (Cursor, Claude, VS Code, etc.)
+- Runs locally via stdio (any MCP-compatible client)
 
 ---
 
 ## Quick start
 
-**Option A — env only** (`~/.cursor/mcp.json`):
+Add to your **MCP client configuration** (path depends on client — e.g. Claude Desktop, VS Code, Windsurf):
 
 ```json
 {
