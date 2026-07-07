@@ -120,3 +120,31 @@ git clone https://github.com/raviraj-ntp/mongodb-mcp.git
 ## License
 
 MIT
+
+---
+
+## Publishing (maintainers)
+
+Repo: https://github.com/raviraj-ntp/mongodb-mcp · npm: `@raviraj87/mongodb-mcp`
+
+```bash
+git status
+npm run build
+git push origin main
+
+npm whoami    # raviraj87
+npm version patch    # required before republish
+npm publish --access public
+# 2FA: npm publish --access public --otp=XXXXXX
+```
+
+Verify tarball: `npm pack --dry-run`
+
+| Error | Fix |
+|-------|-----|
+| `remote origin already exists` | `git remote set-url origin https://github.com/raviraj-ntp/mongodb-mcp.git` |
+| `Permission denied (publickey)` | Use HTTPS remote, not `git@github.com:...` |
+| `403 ... previously published versions` | `npm version patch` then publish |
+| `429 Too many requests` | Wait 30–60 min, retry once |
+
+New GitHub repo: `gh repo create raviraj-ntp/mongodb-mcp --public --source=. --remote=origin --push`
