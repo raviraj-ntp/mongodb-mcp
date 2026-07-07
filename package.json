@@ -1,0 +1,57 @@
+{
+  "name": "@raviraj87/mongodb-mcp",
+  "version": "0.1.0",
+  "description": "Feature-rich MCP server for MongoDB with multi-connection support",
+  "license": "MIT",
+  "author": "Ravi Raj",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raviraj-ntp/mongodb-mcp.git"
+  },
+  "homepage": "https://github.com/raviraj-ntp/mongodb-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/raviraj-ntp/mongodb-mcp/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mongodb",
+    "atlas",
+    "cursor"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mongodb-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "config.example.yaml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "mongodb": "^6.16.0",
+    "yaml": "^2.8.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

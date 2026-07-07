@@ -1,0 +1,35 @@
+default_connection: local
+read_only: false
+index_check: false
+disable_server_side_js: true
+max_documents_per_query: 100
+max_payload_bytes: 16777216
+connection_filter: "" # optional: comma-separated names to expose (empty = all)
+
+confirmation_required_tools:
+  - drop-database
+  - drop-collection
+  - delete-many
+  - drop-index
+
+connections:
+  local:
+    description: Local dev MongoDB
+    uri_env: MONGODB_URI
+  staging:
+    description: Staging cluster
+    uri_env: MONGODB_URI_STAGING
+  prod:
+    description: Production (read-only)
+    uri_env: MONGODB_URI_PROD
+    read_only: true
+
+assistant:
+  enabled: true
+  base_url: https://knowledge.mongodb.com/api/v1/
+
+atlas:
+  enabled: false
+  public_key_env: ATLAS_PUBLIC_KEY
+  private_key_env: ATLAS_PRIVATE_KEY
+  default_project_id: ""
