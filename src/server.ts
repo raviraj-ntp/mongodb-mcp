@@ -21,7 +21,7 @@ import { registerWriteTools } from "./tools/writeTools.js";
 export function createMongoMcpServer(mgr: ConnectionManager): McpServer {
   const server = new McpServer({
     name: "mongodb-mcp",
-    version: "1.0.0",
+    version: "1.0.1",
   });
 
   registerConnectionTools(server, mgr);
