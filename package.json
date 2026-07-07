@@ -1,6 +1,6 @@
 {
   "name": "@raviraj87/mongodb-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Feature-rich MCP server for MongoDB with multi-connection support",
   "license": "MIT",
   "author": "Ravi Raj",
