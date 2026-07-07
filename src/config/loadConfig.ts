@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/mongodb-mcp · config/loadConfig.ts
+ * YAML and environment configuration loader.
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 import { existsSync, readFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { join } from "node:path";

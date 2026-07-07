@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/mongodb-mcp · client/connectionManager.ts
+ * Multi-connection MongoDB client pool and lifecycle.
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 import { MongoClient, type Db, type Document } from "mongodb";
 import { loadConfig, resolveEnv } from "../config/loadConfig.js";
 import type { AppConfig, EffectiveConnectionSettings } from "../config/schema.js";

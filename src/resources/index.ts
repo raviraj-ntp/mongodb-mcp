@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/mongodb-mcp · resources/index.ts
+ * MCP resources for config, debug, and exports.
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
 import type { ConnectionManager } from "../client/connectionManager.js";

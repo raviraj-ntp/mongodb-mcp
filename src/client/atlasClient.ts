@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/mongodb-mcp · client/atlasClient.ts
+ * Atlas Administration API client (HTTP Digest auth).
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 import { createHash, randomBytes } from "node:crypto";
 
 type DigestChallenge = {

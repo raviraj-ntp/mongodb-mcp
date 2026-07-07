@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/mongodb-mcp · util/bson.ts
+ * EJSON parse and serialize utilities.
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 import { EJSON } from "bson";
 
 export function parseEjson<T = unknown>(value: string | undefined, fallback: T): T {

@@ -119,7 +119,7 @@ git clone https://github.com/raviraj-ntp/mongodb-mcp.git
 
 ## License
 
-MIT
+Copyright © 2026 Ravi Raj. Licensed under the [MIT License](LICENSE).
 
 ---
 

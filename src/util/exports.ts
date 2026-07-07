@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/mongodb-mcp · util/exports.ts
+ * Temporary named export store for MCP resources.
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 const exports = new Map<string, { data: unknown; createdAt: number }>();
 const TTL_MS = 5 * 60 * 1000;
 

@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/mongodb-mcp · util/guards.ts
+ * Read-only mode and query safety guards.
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 const SERVER_SIDE_JS_KEYS = new Set(["$where", "$function", "$accumulator"]);
 
 export function assertNoServerSideJs(value: unknown, path = "query"): void {

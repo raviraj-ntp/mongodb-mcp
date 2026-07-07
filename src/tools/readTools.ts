@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/mongodb-mcp · tools/readTools.ts
+ * Read and query MCP tools (find, aggregate, count).
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import type { Document } from "mongodb";
 import { z } from "zod";

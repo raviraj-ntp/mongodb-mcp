@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/mongodb-mcp · util/response.ts
+ * MCP JSON response formatting.
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 export function stringify(data: unknown): string {
   return JSON.stringify(data, null, 2);
 }

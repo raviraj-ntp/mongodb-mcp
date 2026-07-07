@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/mongodb-mcp · tools/common.ts
+ * Shared tool registration and safety helpers.
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import type { ConnectionManager } from "../client/connectionManager.js";

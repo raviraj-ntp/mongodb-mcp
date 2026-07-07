@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/mongodb-mcp · tools/writeTools.ts
+ * Document write and bulk operation MCP tools.
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import type { ConnectionManager } from "../client/connectionManager.js";

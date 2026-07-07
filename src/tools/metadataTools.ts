@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/mongodb-mcp · tools/metadataTools.ts
+ * Schema, indexes, and metadata MCP tools.
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import type { ConnectionManager } from "../client/connectionManager.js";
